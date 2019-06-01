@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar__header {
+    background: rgba(136, 136, 136, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.2rem solid #3b9e0e;
+}
+
+.navbar__btn {
+    align-self: center;
+    border: 3px solid #3b9e0e;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+    background: #9e9e9e;
+    transition: all 1s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-9px, -9px);
+}
+
+.navbar__links {
+    list-style-type: none;
+    transition: all 1s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar__collapse {
+    height: 240px;
+}
+
+.navbar__single-link {
+    display: block;
+    background: rgba(136, 136, 136, 0.5);
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3b9e0e;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.navbar__single-link:hover {
+    padding-left: 1.7rem;
+    background: #9e9e9e;
+}
+
+header {
+    margin-top: -3px;
+    min-height: calc(100vh - 91.8px);
+    background: url('img/keyboard2.jpg') center/cover no-repeat;
+}
