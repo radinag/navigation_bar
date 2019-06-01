@@ -11,4 +11,4 @@ navbarBtn.addEventListener('click', function() {
         navbarLinks.classList.add('navbar__collapse');
         navbarBtn.classList.add('change');
     }
-})
+});
